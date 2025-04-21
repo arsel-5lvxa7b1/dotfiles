@@ -27,12 +27,12 @@ alias sctlrst='sudo systemctl restart'
 alias sctlrld='sudo systemctl reload'
 
 # Minecraft
-alias mcrun='sudo systemctl restart minecraft'
+alias mcrun='sudo systemctl start minecraft'
 alias mcstop='sudo systemctl stop minecraft'
 alias mclog='journalctl -u minecraft -o cat -e'
 alias mclogf='journalctl -f -u minecraft -o cat'
 alias mcstatus='systemctl status minecraft'
-alias mceditprops="vi ${MC_SERVER}/server.properties"
+alias mceditprops='vi /home/arsel/mc/server/server.properties'
 
 # Docker
 alias d='sudo docker'
