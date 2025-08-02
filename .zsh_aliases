@@ -1,7 +1,10 @@
-alias ll="ls -alFh"
-alias grep="grep --color=auto"
+alias ll='ls -lahF'
+alias mv='mv -i'
+alias pager='less -SXF'
 
-alias dc="docker compose"
-alias d="docker"
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
+alias ip='ip -c=auto'
 
-alias pager="less -SXF"
+alias dc='docker compose'
+alias d='docker'
