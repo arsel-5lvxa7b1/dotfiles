@@ -1,0 +1,7 @@
+alias ll="ls -alFh"
+alias grep="grep --color=auto"
+
+alias dc="docker compose"
+alias d="docker"
+
+alias pager="less -SXF"
