@@ -119,6 +119,26 @@ fi
 ### region Custom stuff
 
 export EDITOR=/usr/bin/vim
+export BAT_PAGER='less -RFX'
+
+# Alternate line coloring
+zebra() {
+  awk '
+  BEGIN {
+    # backgrounds
+    odd_bg = "\033[48;2;30;31;34m"
+    even_bg = "\033[48;2;0;133;118m"
+
+    # text colors
+    odd_fg = "\033[38;2;71;204;189m"
+    even_fg = "\033[38;2;0;0;0m"
+
+    reset = "\033[0m"
+  }
+  NR % 2 == 0 { print even_bg even_fg $0 reset; next }
+              { print odd_bg odd_fg $0 reset }
+  '
+}
 
 ### endregion Custom stuff
 

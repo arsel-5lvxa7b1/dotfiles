@@ -1,9 +1,10 @@
 alias sudo='sudo '
 alias ll='ls -alFh'
-alias ports='sudo ss -plunt | rows | less -S -R'
+alias ports='sudo ss -plunt | zebra'
 alias n='nnn -c'
 alias ufws='sudo ufw status verbose'
 alias rsyncp='rsync -ah --partial --info=progress2'
+alias rsyncw='rsync -avh --whole-file'
 alias bat='batcat'
 
 # apt
