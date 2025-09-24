@@ -1,6 +1,9 @@
 # Herd injected PHP 8.4 configuration.
 export HERD_PHP_84_INI_SCAN_DIR="/Users/arsel/Library/Application Support/Herd/config/php/84/"
 
+# Herd injected PHP 8.5 configuration.
+export HERD_PHP_85_INI_SCAN_DIR="/Users/arsel/Library/Application Support/Herd/config/php/85/"
+
 # Herd injected NVM configuration
 export NVM_DIR="/Users/arsel/Library/Application Support/Herd/config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -8,12 +11,13 @@ export NVM_DIR="/Users/arsel/Library/Application Support/Herd/config/nvm"
 [[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
 
 # Herd injected PHP binary.
-export PATH="/Users/arsel/Library/Application Support/Herd/bin/":$PATH
+export PATH="/Users/arsel/Library/Application Support/Herd/bin":$PATH
 
 # Manual below
 
-export PATH="/opt/homebrew/opt/libpq/bin/":$PATH # PostgreSQL client binaries
-export PATH="$HOME/bin/":$PATH # User binaries
+export PATH="/opt/homebrew/opt/libpq/bin":$PATH # PostgreSQL client binaries
+export PATH="/Applications/PhpStorm.app/Contents/MacOS":$PATH # phpstorm CLI
+export PATH="$HOME/bin":$PATH # User binaries
 
 source "$HOME/.zsh_aliases"
 
