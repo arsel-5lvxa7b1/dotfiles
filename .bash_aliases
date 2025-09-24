@@ -4,6 +4,7 @@ alias ports='sudo ss -plunt | rows | less -S -R'
 alias n='nnn -c'
 alias ufws='sudo ufw status verbose'
 alias rsyncp='rsync -ah --partial --info=progress2'
+alias bat='batcat'
 
 # apt
 alias apti='sudo apt install'
